@@ -1,0 +1,518 @@
+{
+  "title": "Copper Observatory",
+  "asOf": "2026-11-25",
+  "snapshot": true,
+  "currencyNote": "Original quoted currencies are preserved; no FX conversion is applied.",
+  "sources": {
+    "argus": {
+      "label": "Argus · reported by Reuters",
+      "url": "https://www.kitco.com/news/off-the-wire/2026-11-17/chinas-concentrate-fed-copper-smelting-capacity-nears-ceiling-2026",
+      "publisher": "Reuters via Kitco",
+      "published": "2026-11-17",
+      "type": "Reported assessment",
+      "note": "Reuters attributes the spot treatment charge to Argus. The observation is dated November 6; it is not a November 25 quote."
+    },
+    "argusMethod": {
+      "label": "Argus methodology",
+      "url": "https://www.argusmedia.com/-/media/Files/methodology/argus-non-ferrous-markets.ashx",
+      "publisher": "Argus",
+      "published": "2026-11",
+      "type": "Primary methodology",
+      "note": "Argus specifies RC in US cents/lb at 10% of the numerical TC in US dollars/t. The displayed RC is calculated, not independently retrieved."
+    },
+    "platts": {
+      "label": "S&P Global · Platts",
+      "url": "https://www.spglobal.com/energy/en/news-research/latest-news/metals/100926-trade-review-chinese-copper-concs-tcrc-decline-to-slow-in-q4-amid-tight-supply",
+      "publisher": "S&P Global Energy",
+      "published": "2026-10-09",
+      "type": "Primary assessment",
+      "note": "CIF China clean copper concentrate TC of −$235/mt and RC of −23.5 US cents/lb, assessed October 8. Separate methodology from Argus."
+    },
+    "acid": {
+      "label": "SMM · sulphuric acid review",
+      "url": "https://news.metal.com/newscontent/104209975-new-moon-price-adjustment-high-level-regional-decline-northeast-inner-mongolia-leads-the-decline-smm-sulphuric-acid-weekly-review",
+      "publisher": "Shanghai Metals Market",
+      "published": "2026-11-06",
+      "type": "Primary assessment",
+      "note": "China copper-smelting acid index, CNY per metric tonne. Includes November 6 and the prior Friday comparison."
+    },
+    "acidSep": {
+      "label": "SMM · September 18 review",
+      "url": "https://news.metal.com/newscontent/INDJ7FOKTQNGDRXIA67X3DJYQW4EDB3J43MGWXY-chinas-sulphuric-acid-weekly-decline-narrowed-significantly-with-shanxi-falling-by-a-further-330-yuanmt-smm-sulphuric-acid-weekly-review",
+      "publisher": "Shanghai Metals Market",
+      "published": "2026-09-18",
+      "type": "Primary assessment",
+      "note": "Copper-smelting acid index of CNY 1,351/t; previous Friday CNY 1,418/t."
+    },
+    "acidSep30": {
+      "label": "SMM · September 30 review",
+      "url": "https://news.metal.com/newscontent/26GEL44INXXGPNCLAH6GHVZABAWPTPDALU3JE2Y-pre-holiday-fluctuations-converge-price-center-shifts-to-october-smm-sulphuric-acid-weekly-review",
+      "publisher": "Shanghai Metals Market",
+      "published": "2026-09-30",
+      "type": "Primary assessment",
+      "note": "Copper-smelting acid index of CNY 1,218.5/t; previous Friday CNY 1,247.5/t."
+    },
+    "production": {
+      "label": "SMM · October output",
+      "url": "https://news.metal.com/newscontent/104189853-chinas-copper-cathode-output-drops-in-october-raw-material-supply-tightens",
+      "publisher": "Shanghai Metals Market",
+      "published": "2026-10-31",
+      "type": "Primary survey",
+      "note": "SMM survey reports October cathode output of 1.0867 million tonnes, −3.03% MoM and −0.45% YoY. November 1.0821 Mt is a forecast and is excluded from actuals."
+    },
+    "nbs": {
+      "label": "NBS · reported via SMM / Wenhua",
+      "url": "https://news.smm.cn/news/FSSHDNY24QAU4AXMUOTJIUMZSYH5DRDZGUWQYRI",
+      "publisher": "Wenhua, republished by SMM",
+      "published": "2026-11-18",
+      "type": "Reported official statistic",
+      "note": "Reports NBS October refined copper output of 1.2220 million tonnes, +1.80% YoY. January–October total: 12.5040 Mt, +2.70% YoY. Underlying NBS table was not retrieved directly."
+    },
+    "customs": {
+      "label": "GACC · reported via SMM / Wenhua",
+      "url": "https://news.smm.cn/news/YEXZTUKM3GXEP6O3GQI2LUYLY36YKAKG257QUXY",
+      "publisher": "Wenhua, republished by SMM",
+      "published": "2026-11-10",
+      "type": "Reported official statistic",
+      "note": "Customs preliminary October copper ore and concentrate imports: 216.70 ten-thousand tonnes = 2,167,000 tonnes. January–October: 24.1421 Mt, −3.80% YoY. This is gross ore/concentrate mass, not contained copper."
+    },
+    "inventory": {
+      "label": "SHFE · displayed by SMM",
+      "url": "https://www.metal.com/",
+      "publisher": "Shanghai Metals Market",
+      "published": null,
+      "type": "Exchange data republished",
+      "note": "SMM's exchange inventory panel displays copper inventory of 30,846 tonnes, +3,204 tonnes (+11.59%). Week-ending date is corroborated by the November 20 SP Angel report."
+    },
+    "inventoryDate": {
+      "label": "SP Angel · November 20 report",
+      "url": "https://www.share-talk.com/sp-angel-todays-market-view-friday-20th-november-2026/",
+      "publisher": "SP Angel via Share Talk",
+      "published": "2026-11-20",
+      "type": "Date corroboration",
+      "note": "Dates SHFE weekly copper inventory of 30,846 tonnes and increase of 3,204 tonnes to the week ending November 20. Prior week value of 27,642 is calculated as 30,846 − 3,204."
+    },
+    "shfe": {
+      "label": "SHFE · official weekly reports",
+      "url": "https://www.shfe.cn/eng/reports/StatisticalData/WeeklyData/",
+      "publisher": "Shanghai Futures Exchange",
+      "published": null,
+      "type": "Official data portal",
+      "note": "Official SHFE reporting portal. Dynamic inventory table could not be extracted; displayed observations were verified through attributed public reports."
+    },
+    "premium": {
+      "label": "SMM · November 25 Yangshan",
+      "url": "https://news.metal.com/newscontent/U66PEGTNHCAVIG5JCSVGP6TM6M7LK7XO5GFIFJY-market-buying-interest-declines-spot-premiums-pull-back-rapidly-smm-yangshan-spot-copper",
+      "publisher": "Shanghai Metals Market",
+      "published": "2026-11-25",
+      "type": "Primary assessment",
+      "note": "Daily Yangshan registered-copper warrant premium: $340/t, range $280–400/t, −$50/t day on day. Warrant basis is used consistently; B/L and EQ assessments are separate."
+    },
+    "premium24": {
+      "label": "SMM · November 24 Yangshan",
+      "url": "https://news.metal.com/newscontent/BUAATJ45K3EMMWQ4TMKSARQCRIMY3XBA6D7V73Q-spot-copper-import-premiums-pull-back-as-market-expectations-weaken-smm-yangshan-spot-copper",
+      "publisher": "Shanghai Metals Market",
+      "published": "2026-11-24",
+      "type": "Primary assessment",
+      "note": "Daily warrant premium $390/t, range $360–420/t."
+    },
+    "weeklyOct29": {
+      "label": "SMM · October 29 weekly review",
+      "url": "https://news.metal.com/newscontent/UA62BS3PLJAKZV4C7A32GA6VT36MOPFC2QC7HSQ-supply-deficit-continues-to-intensify-yangshan-copper-premiums-hit-a-historic-high-smm-yangshan-copper-weekly-review",
+      "publisher": "Shanghai Metals Market",
+      "published": "2026-10-29",
+      "type": "Primary weekly assessment",
+      "note": "Published review for October 26–29: average warrant premium $193/t; B/L $180/t."
+    },
+    "weeklyNov5": {
+      "label": "SMM · November 5 weekly review",
+      "url": "https://news.metal.com/newscontent/104207587-tight-supply-provides-strong-support-for-premiums-imported-copper-premiums-continue-to-hit-record-highs-smm-yangshan-copper-weekly-review",
+      "publisher": "Shanghai Metals Market",
+      "published": "2026-11-05",
+      "type": "Primary weekly assessment",
+      "note": "Published review for November 2–5: average warrant premium $204/t; B/L $194/t."
+    },
+    "weeklyNov12": {
+      "label": "SMM · November 12 weekly review",
+      "url": "https://news.metal.com/newscontent/ORLFTZ6VWM6VYQLBG4IDMTPB67J43IQX24SOZEQ-smm-yangshan-copper-weekly-review-traders-wait-and-see-sentiment-strengthens-market-activity-cools-during-the-week",
+      "publisher": "Shanghai Metals Market",
+      "published": "2026-11-12",
+      "type": "Primary weekly assessment",
+      "note": "Published review for November 9–12: average warrant premium $233/t; B/L $223/t."
+    },
+    "weeklyNov19": {
+      "label": "SMM · November 19 weekly review",
+      "url": "https://news.metal.com/newscontent/XIEUU6TQM7SFNEG2LRETWP5XW6CTUSHHKOTJSXI-arbitrage-drives-imported-copper-premiums-surge-spot-market-liquidity-declines-smm-yangshan-copper-weekly-review",
+      "publisher": "Shanghai Metals Market",
+      "published": "2026-11-19",
+      "type": "Primary weekly assessment",
+      "note": "Review published November 19 describes November 16–20: average warrant premium $375/t; B/L $340/t. Treated as a published week-to-date assessment, not a finalized full-week average."
+    },
+    "regimeIEA": {
+      "label": "IEA · the changing economics of copper smelting",
+      "url": "https://www.iea.org/commentaries/copper-prices-have-hit-record-highs-but-smelters-face-mounting-strategic-pressures",
+      "publisher": "International Energy Agency",
+      "published": "2026-03-02",
+      "type": "Primary industry analysis",
+      "note": "Documents negative spot TC/RCs since 2024 and a zero annual benchmark for 2026. Describes the growing role of by-products, differences between integrated and custom smelters, and the supply/capacity adjustment needed for fees to recover."
+    },
+    "regimeIvanhoe": {
+      "label": "Ivanhoe Mines · Q3 2026 operating results",
+      "url": "https://www.ivanhoemines.com/news-stories/news-release/ivanhoe-mines-issues-2026-third-quarter-financial-results-overview-of-operations-and-exploration-activities/",
+      "publisher": "Ivanhoe Mines",
+      "published": "2026-11-03",
+      "type": "Primary company disclosure",
+      "note": "Kamoa-Kakula's Q3 smelter operating cost was $0.51/lb of payable copper; acid by-product credits were $0.69/lb. These are selected C1 cash-cost components on a 100% project basis, not total costs or an accounting profit margin. DRC operations do not establish Chinese smelter economics."
+    },
+    "regimeCapstone": {
+      "label": "Capstone Copper · Q3 2026 operating results",
+      "url": "https://capstonecopper.com/news/capstone-copper-reports-third-quarter-2026-results/",
+      "publisher": "Capstone Copper",
+      "published": "2026-10-29",
+      "type": "Primary company disclosure",
+      "note": "Mantos Blancos acid prices were $316/t versus $186/t a year earlier. Mantoverde reduced acid-intensive heap throughput. Cathode output for the company's cathode business fell 48% YoY, with multiple drivers; it is not a China-wide statistic."
+    },
+    "regimeBoliden": {
+      "label": "Boliden · Q3 2026 interim report, page 10",
+      "url": "https://investors.boliden.com/sites/boliden-ir/files/pr/202610291842-1.pdf?ts=1793275238",
+      "publisher": "Boliden",
+      "published": "2026-10-29",
+      "type": "Primary company disclosure",
+      "note": "Boliden reported that stronger metal and acid prices offset lower treatment charges. Its Smelters segment includes copper, nickel, zinc and lead operations, so the segment result cannot be treated as a pure copper-smelting margin."
+    }
+  },
+  "metrics": [
+    {
+      "id": "tc",
+      "name": "Spot concentrate TC / RC",
+      "category": "Smelter economics",
+      "short": "Treatment charges",
+      "value": -247.2,
+      "unit": "USD/dmt",
+      "date": "2026-11-06",
+      "period": "6 Nov 2026",
+      "frequency": "Weekly",
+      "sourceIds": [
+        "argus",
+        "argusMethod",
+        "platts"
+      ],
+      "status": "Older public quote",
+      "delta": "−$0.80/t WoW",
+      "deltaType": "down",
+      "summary": "Concentrate remains expensive to secure.",
+      "meaning": "Treatment and refining charges measure the fees for turning concentrate into refined copper. Negative charges mean the smelter pays for feedstock processing access.",
+      "method": "Argus spot TC reported by Reuters. RC of −24.72 US¢/lb is derived using Argus's numerical 10% convention. The latest licensed assessment has not been connected.",
+      "detail": "CIF China clean concentrate. TC is per dry metric tonne of concentrate; RC is per pound of payable copper. Do not compare the two units directly.",
+      "series": [
+        {
+          "date": "2026-10-30",
+          "value": -246.4,
+          "source": "argus"
+        },
+        {
+          "date": "2026-11-06",
+          "value": -247.2,
+          "source": "argus"
+        }
+      ]
+    },
+    {
+      "id": "acid",
+      "name": "Chinese sulphuric acid",
+      "category": "Smelter by-product",
+      "short": "Sulphuric acid",
+      "value": 1257.5,
+      "unit": "CNY/t",
+      "date": "2026-11-06",
+      "period": "6 Nov 2026",
+      "frequency": "Weekly",
+      "sourceIds": [
+        "acid",
+        "acidSep",
+        "acidSep30"
+      ],
+      "status": "Older public quote",
+      "delta": "−¥15/t WoW",
+      "deltaType": "down",
+      "summary": "By-product prices eased in the latest public quote.",
+      "meaning": "Sulphuric acid is a key by-product of copper smelting. Its sale can support smelter economics when concentrate processing fees are weak.",
+      "method": "SMM China copper-smelting acid index. This is a smelter-acid benchmark, not a universal quote for every grade or Chinese region. A newer public review exists without a retrievable numerical index.",
+      "detail": "Quoted in Chinese yuan per metric tonne. The older observation is retained because the newer index value could not be verified publicly.",
+      "series": [
+        {
+          "date": "2026-09-11",
+          "value": 1418,
+          "source": "acidSep"
+        },
+        {
+          "date": "2026-09-18",
+          "value": 1351,
+          "source": "acidSep"
+        },
+        {
+          "date": "2026-09-25",
+          "value": 1247.5,
+          "source": "acidSep30"
+        },
+        {
+          "date": "2026-09-30",
+          "value": 1218.5,
+          "source": "acidSep30"
+        },
+        {
+          "date": "2026-10-30",
+          "value": 1272.5,
+          "source": "acid"
+        },
+        {
+          "date": "2026-11-06",
+          "value": 1257.5,
+          "source": "acid"
+        }
+      ]
+    },
+    {
+      "id": "production",
+      "name": "Chinese refined production",
+      "category": "Refined supply",
+      "short": "Refined production",
+      "value": 1.0867,
+      "unit": "million t",
+      "date": "2026-10-31",
+      "period": "Oct 2026",
+      "frequency": "Monthly",
+      "sourceIds": [
+        "production",
+        "nbs"
+      ],
+      "status": "Monthly release",
+      "delta": "−3.03% MoM · SMM",
+      "deltaType": "down",
+      "summary": "October output differs across the two datasets.",
+      "meaning": "Refined production tracks China's domestic copper cathode supply. SMM's survey and NBS statistics have different coverage and methods, so their totals are displayed separately.",
+      "method": "SMM: 1.0867 Mt (−3.03% MoM; −0.45% YoY). NBS via Wenhua/SMM: 1.2220 Mt (+1.80% YoY). Do not splice these into a single historical series.",
+      "detail": "October 2026 actuals only. The SMM November forecast is excluded. No month-on-month change is inferred for the NBS series.",
+      "series": [
+        {
+          "date": "2026-10-31",
+          "label": "SMM",
+          "value": 1.0867,
+          "source": "production"
+        },
+        {
+          "date": "2026-10-31",
+          "label": "NBS",
+          "value": 1.222,
+          "source": "nbs"
+        }
+      ]
+    },
+    {
+      "id": "imports",
+      "name": "Copper concentrate imports",
+      "category": "Feedstock flows",
+      "short": "Concentrate imports",
+      "value": 2.167,
+      "unit": "million t",
+      "date": "2026-10-31",
+      "period": "Oct 2026",
+      "frequency": "Monthly",
+      "sourceIds": [
+        "customs"
+      ],
+      "status": "Preliminary release",
+      "delta": "−3.80% YTD YoY",
+      "deltaType": "down",
+      "summary": "Year-to-date feedstock arrivals are lower.",
+      "meaning": "Customs copper ore and concentrate imports measure feedstock entering China. This is gross imported material, not tonnes of contained or refined copper.",
+      "method": "General Administration of Customs preliminary statistics, reported by Wenhua and republished by SMM on November 10. October: 2.1670 Mt. January–October: 24.1421 Mt, −3.80% YoY.",
+      "detail": "Source units are 10,000 tonnes; 216.70 × 10,000 = 2,167,000 tonnes. The year-to-date change does not describe October's individual year-on-year change.",
+      "series": [
+        {
+          "date": "2026-10-31",
+          "label": "October",
+          "value": 2.167,
+          "source": "customs"
+        }
+      ]
+    },
+    {
+      "id": "inventory",
+      "name": "Shanghai copper inventories",
+      "category": "Exchange stocks",
+      "short": "SHFE inventories",
+      "value": 30846,
+      "unit": "tonnes",
+      "date": "2026-11-20",
+      "period": "20 Nov 2026",
+      "frequency": "Weekly",
+      "sourceIds": [
+        "inventory",
+        "inventoryDate",
+        "shfe"
+      ],
+      "status": "Weekly release",
+      "delta": "+3,204 t WoW",
+      "deltaType": "up",
+      "summary": "Exchange stocks rose from a low base.",
+      "meaning": "SHFE copper inventory measures stocks in exchange-designated warehouses across its delivery network. It is not all copper physically stored in Shanghai and is separate from daily registered warrants.",
+      "method": "SHFE data displayed by SMM; week-ending date corroborated by SP Angel. November 13's 27,642 t is calculated from 30,846 − 3,204. Weekly increase is 11.59%.",
+      "detail": "Use total weekly warehouse inventory rather than daily warrant tonnage. Bonded and broader social inventories are separate datasets.",
+      "series": [
+        {
+          "date": "2026-11-13",
+          "value": 27642,
+          "source": "inventoryDate",
+          "derived": true
+        },
+        {
+          "date": "2026-11-20",
+          "value": 30846,
+          "source": "inventory"
+        }
+      ]
+    },
+    {
+      "id": "premium",
+      "name": "Yangshan cathode premium",
+      "category": "Import demand",
+      "short": "Yangshan premium",
+      "value": 340,
+      "unit": "USD/t",
+      "date": "2026-11-25",
+      "period": "25 Nov 2026",
+      "frequency": "Daily",
+      "sourceIds": [
+        "premium",
+        "premium24",
+        "weeklyOct29",
+        "weeklyNov5",
+        "weeklyNov12",
+        "weeklyNov19"
+      ],
+      "status": "Daily assessment",
+      "delta": "−$50/t day on day",
+      "deltaType": "down",
+      "summary": "Warrant premiums pulled back on November 25.",
+      "meaning": "The Yangshan premium measures the premium for imported cathode on a specified delivery basis. It is a signal of physical import appetite and availability, rather than the outright copper price.",
+      "method": "SMM registered-copper warrant premium, daily average. November 25: $340/t, assessed range $280–400/t. Bills of lading and EQ cathode use separate assessments.",
+      "detail": "Daily assessments and published weekly averages are separate chart views. Weekly points use publication dates; November 19 is a week-to-date publication.",
+      "series": [
+        {
+          "date": "2026-11-24",
+          "value": 390,
+          "source": "premium24"
+        },
+        {
+          "date": "2026-11-25",
+          "value": 340,
+          "low": 280,
+          "high": 400,
+          "source": "premium"
+        }
+      ],
+      "weekly": [
+        {
+          "date": "2026-10-29",
+          "value": 193,
+          "source": "weeklyOct29",
+          "period": "26–29 Oct"
+        },
+        {
+          "date": "2026-11-05",
+          "value": 204,
+          "source": "weeklyNov5",
+          "period": "2–5 Nov"
+        },
+        {
+          "date": "2026-11-12",
+          "value": 233,
+          "source": "weeklyNov12",
+          "period": "9–12 Nov"
+        },
+        {
+          "date": "2026-11-19",
+          "value": 375,
+          "source": "weeklyNov19",
+          "period": "16–20 Nov · published 19 Nov"
+        }
+      ]
+    }
+  ],
+  "regime": {
+    "asOf": "2026-11-25",
+    "summary": "The reversal is real. The opportunity depends on who captures the value.",
+    "timing": "This shift developed over 2024–26. It is not a newly verified overnight event.",
+    "sourceIds": [
+      "regimeIEA",
+      "argus",
+      "regimeIvanhoe",
+      "regimeCapstone",
+      "regimeBoliden",
+      "platts"
+    ],
+    "cases": {
+      "acidSeller": {
+        "company": "Kamoa-Kakula · DRC",
+        "period": "Q3 2026",
+        "credit": 0.69,
+        "cost": 0.51,
+        "unit": "USD / payable lb of copper",
+        "source": "regimeIvanhoe"
+      },
+      "acidBuyer": {
+        "company": "Mantos Blancos · Chile",
+        "period": "Q3 2026 vs Q3 2025",
+        "current": 316,
+        "previous": 186,
+        "unit": "USD / tonne of acid",
+        "source": "regimeCapstone"
+      }
+    },
+    "exposures": [
+      {
+        "business": "Concentrate-owning miners",
+        "tag": "Potential fee tailwind",
+        "tone": "support",
+        "mechanism": "A smaller or negative processing deduction can improve concentrate sale proceeds.",
+        "verify": "Check spot versus annual contracts, payability, mine costs and disruptions.",
+        "sourceIds": [
+          "argus"
+        ]
+      },
+      {
+        "business": "Smelters with strong by-product revenue",
+        "tag": "Selective offset",
+        "tone": "mixed",
+        "mechanism": "Acid and recovered metals can offset weak processing fees. The result is plant- and region-specific.",
+        "verify": "Check net acid proceeds, recovery rates, transport costs and access to buyers.",
+        "sourceIds": [
+          "regimeIvanhoe",
+          "regimeBoliden"
+        ]
+      },
+      {
+        "business": "Independent custom smelters",
+        "tag": "Processing pressure",
+        "tone": "pressure",
+        "mechanism": "Buying concentrate at negative fees compresses the processing revenue line.",
+        "verify": "Check full margins, hedges, subsidies, premium income and actual curtailments.",
+        "sourceIds": [
+          "regimeIEA",
+          "platts"
+        ]
+      },
+      {
+        "business": "Acid-dependent leach producers",
+        "tag": "Input-cost headwind",
+        "tone": "pressure",
+        "mechanism": "Higher purchased acid prices can raise costs or make some ore uneconomic to process.",
+        "verify": "Check acid consumption, supply contracts and protection from owned smelters.",
+        "sourceIds": [
+          "regimeCapstone"
+        ]
+      }
+    ]
+  }
+}
