@@ -14,3 +14,11 @@ Each observation references a source key with an external URL. Updates should re
 To preview locally, serve `dist/` over HTTP. No build step or runtime dependencies are required.
 
 Regime watch adds a sourced research thesis on negative processing fees, by-product offsets, business exposures and six indicator interpretations. `dist/regime.js` renders the accessible analysis tabs. Company case data and source references live in `data.json` under `regime`; company cash-cost components are not full profitability estimates. CSV export includes the company case observations.
+
+## Deploy on Vercel
+
+Import this repository with the repository root as the Root Directory. The committed `vercel.json` selects the Other framework preset, skips install/build commands, and serves `dist/`. No environment variables or dependencies are required. An already connected project redeploys when `main` changes.
+
+If project settings were previously overridden, leave Root Directory empty (the repository root); the site entry point is `dist/index.html`. Do not set the Root Directory to `dist` while also using `outputDirectory: dist`.
+
+The phone layout includes accessible navigation, larger controls, a chart sized to its container, and stacked indicator interpretations.

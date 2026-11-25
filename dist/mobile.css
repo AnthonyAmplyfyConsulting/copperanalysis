@@ -1,0 +1,161 @@
+/* Phone layouts retain readable data and complete controls at narrow widths. */
+@media (max-width: 900px) {
+  .metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .analysis-grid { grid-template-columns: minmax(0, 1fr); }
+  .chart-container { flex: none; height: 280px; min-height: 280px; max-height: none; }
+  .chart-y-label, .chart-x-label { font-size: 12px; }
+  .chart-data-label { font-size: 13px; }
+  .chart-controls { gap: .8rem; }
+  .select-wrap select { min-height: 44px; font-size: 1rem; }
+  .segmented > button { min-height: 38px; font-size: .875rem; }
+  .regime-proof-grid, .exposure-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 600px) {
+  html { scroll-padding-top: calc(84px + env(safe-area-inset-top)); }
+  body { min-width: 0; }
+  main { padding: 1.4rem 1rem 0; }
+  main > *, .metric-card, .chart-panel, .insight-panel, .regime-proof, .exposure-card { min-width: 0; }
+  .ambient { filter: blur(65px); opacity: .75; }
+  .sidebar {
+    position: sticky; top: 0; bottom: auto; z-index: 20;
+    width: 100%; height: calc(64px + env(safe-area-inset-top));
+    padding: env(safe-area-inset-top) 1rem 0;
+    flex-direction: row; justify-content: space-between; align-items: center;
+    border-right: 0; border-bottom: 1px solid var(--line);
+    background: rgba(19, 25, 28, .94); backdrop-filter: blur(16px);
+  }
+  .sidebar .brand { min-height: 44px; gap: .5rem; font-size: 1.05rem; }
+  .brand-mark { height: 34px; width: 34px; flex-shrink: 0; font-size: 1.2rem; }
+  .brand > span:last-child { display: block; }
+  .brand-sub { font-size: .625rem; letter-spacing: .07em; }
+  .workspace-label, .sidebar-region, .sidebar-bottom, .nav-count { display: none; }
+  .sidebar nav { display: flex; flex-direction: row; gap: 0; margin: 0; width: auto; }
+  .nav-link { width: 44px; height: 44px; padding: 12px; justify-content: center; }
+  .nav-link > span:nth-child(2), .nav-link:nth-child(2), .nav-link.active::before { display: none; }
+  .nav-link .icon { width: 20px; height: 20px; }
+  .page-shell { margin-left: 0; }
+  .topbar { height: 46px; padding: 0 1rem; gap: .5rem; }
+  .breadcrumb { font-size: .75rem; gap: .5rem; }
+  .private-badge { font-size: .75rem; gap: .3rem; white-space: nowrap; }
+  .avatar { display: none; }
+  .hero { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.2rem; padding-bottom: 1.5rem; }
+  .hero h1 { font-size: clamp(2.05rem, 8.5vw, 2.6rem); letter-spacing: -.04em; line-height: 1.16; margin-top: .85rem; }
+  .hero p { font-size: 1rem; max-width: none; }
+  .hero .eyebrow { font-size: .75rem; letter-spacing: .07em; }
+  .regime-jump { font-size: .875rem; min-height: 44px; max-width: none; margin-top: .5rem; }
+  .hero-actions { flex-direction: row; align-items: center; justify-content: space-between; gap: 1rem; margin: 0; }
+  .snapshot-date > div { font-size: .75rem; }
+  .snapshot-date strong { font-size: .875rem; }
+  .primary-button, .secondary-button { min-height: 44px; font-size: .875rem; padding: .65rem .9rem; }
+  .primary-button .icon { width: 17px; height: 17px; }
+  .coverage-bar { gap: .5rem; padding: .65rem .75rem; flex-wrap: wrap; }
+  .coverage-bar > button { min-height: 32px; }
+  .coverage-intro, .coverage-bar > button { font-size: .75rem; }
+  .section-title { gap: .75rem; align-items: center; }
+  .section-title h2 { font-size: 1.125rem; }
+  .section-title > span { font-size: .75rem; max-width: 135px; text-align: right; }
+  .metric-grid { gap: .65rem; }
+  .metric-card { min-height: 238px; padding: .8rem .7rem .75rem; animation: none; backdrop-filter: none; }
+  .metric-card:hover { transform: none; }
+  .card-top { gap: .15rem; align-items: flex-start; }
+  .card-title-wrap { flex: 1; min-width: 0; gap: 0; }
+  .card-symbol { display: none; }
+  .card-title { min-height: 44px; font-size: .875rem; line-height: 1.4; overflow-wrap: anywhere; }
+  .card-info { min-width: 36px; min-height: 44px; padding: .3rem; display: grid; place-items: start center; padding-top: .5rem; }
+  .card-info .icon { width: 16px; height: 16px; }
+  .card-value { font-size: 1.85rem; margin-top: .65rem; letter-spacing: -.04em; white-space: nowrap; }
+  .card-value .currency { font-size: 1.15rem; }
+  .card-value .value-unit { font-size: .75rem; margin-left: .15rem; letter-spacing: 0; }
+  [data-card="tc"] .card-value { font-size: 1.7rem; }
+  [data-card="tc"] .card-value .value-unit { display: block; margin: .15rem 0 0; }
+  .card-subline { flex-wrap: wrap; align-items: flex-start; gap: .3rem; min-height: 48px; font-size: .75rem; line-height: 1.5; }
+  .card-subline .rc-label { font-size: .75rem; white-space: normal; }
+  .production-toggle { padding: 0; margin: .2rem 0 0; }
+  .production-toggle > button { font-size: .75rem; min-width: 44px; min-height: 34px; }
+  .card-footer { font-size: .875rem; flex-wrap: wrap; margin-top: .45rem; padding-top: .6rem; gap: .15rem; }
+  .card-footer > .source-chip { font-size: .75rem; width: 100%; letter-spacing: .015em; }
+  .card-footer > span:last-child, .stale-chip { font-size: .875rem; line-height: 1.4; }
+  .stale-chip { max-width: none; }
+  .analysis-grid { margin-top: 1.3rem; }
+  .chart-panel { padding: 1.15rem 1rem 0; }
+  .panel-heading h2 { font-size: 1.125rem; }
+  .icon-button { min-width: 44px; min-height: 44px; padding: .7rem; }
+  .chart-controls { flex-direction: column; align-items: stretch; gap: .7rem; }
+  .select-wrap { width: 100%; }
+  .select-wrap select { width: 100%; min-height: 46px; font-size: 1rem; padding: .6rem 2rem .6rem .8rem; }
+  .select-wrap > span:last-child { top: 17px; right: 12px; }
+  .segmented { align-self: flex-start; }
+  .segmented > button { min-height: 40px; padding: .5rem .8rem; font-size: .875rem; }
+  .chart-summary { flex-direction: column; align-items: flex-start; gap: .55rem; margin-top: 1rem; }
+  .chart-summary > span { font-size: .75rem; text-align: left; max-width: none; }
+  .chart-summary > div > span:last-child { font-size: .875rem; }
+  .chart-value { font-size: 1.8rem; }
+  .chart-container { height: 280px; min-height: 280px; margin-top: .4rem; }
+  .chart-tooltip { max-width: calc(100% - 12px); font-size: .875rem; white-space: normal; }
+  .chart-foot { align-items: center; gap: .6rem; padding: .65rem 0; font-size: .75rem; }
+  .chart-foot > span { max-width: 65%; }
+  .text-button { min-height: 44px; font-size: .875rem; }
+  .data-table-wrap { max-width: 100%; }
+  .data-table-wrap table { min-width: 440px; font-size: .875rem; }
+  .data-table-wrap th { font-size: .875rem; }
+  .insight-panel { padding: 1.25rem; }
+  .insight-panel h3 { font-size: 1.3rem; }
+  .insight-panel p { font-size: 1rem; }
+  .insight-source { min-height: 44px; font-size: .875rem; }
+  .regime-head h2 { font-size: 1.4rem; }
+  .regime-deck { font-size: 1rem; }
+  .regime-tabs { gap: .25rem; }
+  .regime-tabs > [role="tab"] { flex: 1; min-height: 48px; font-size: .875rem; padding: .65rem .25rem; }
+  .regime-source-button { min-height: 44px; font-size: .875rem; }
+  .regime-price > span, .regime-benchmark > span, .case-caption, .acid-unit, .offset-result > span { font-size: .875rem; }
+  .fee-flow-row > span { font-size: .875rem; }
+  .regime-bottom { gap: .3rem; }
+  .regime-signal-table { overflow: visible; }
+  .regime-signal-table::before { display: none; }
+  .regime-signal-table table, .regime-signal-table tbody { display: block; width: 100%; min-width: 0; }
+  .regime-signal-table thead { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
+  .regime-signal-table tbody { display: grid; gap: .9rem; }
+  .regime-signal-table tr { display: block; border: 1px solid var(--line); background: #101c224d; border-radius: 8px; overflow: hidden; }
+  .regime-signal-table td, .regime-signal-table td:first-child, .regime-signal-table td:last-child { display: block; width: 100%; padding: .8rem 1rem; border: 0; font-size: 1rem; }
+  .regime-signal-table td:first-child { border-bottom: 1px solid var(--line); padding-bottom: 1rem; }
+  .regime-signal-table td:not(:first-child)::before { content: attr(data-label); display: block; font-size: .875rem; color: #c9ae91; margin-bottom: .35rem; }
+  .signal-metric-button { font-size: 1rem; min-height: 44px; }
+  .signal-number { font-size: 1.3rem; margin-top: .3rem; }
+  .signal-date { font-size: .875rem; }
+  .source-section { padding: 1.3rem 1.15rem 0; }
+  .source-header h2 { font-size: 1.4rem; }
+  .source-header p { font-size: 1rem; }
+  .source-wordmark > span { font-size: .75rem; letter-spacing: .02em; }
+  .source-strip > button > span:last-child { font-size: .875rem; }
+  .source-strip > button { min-height: 98px; }
+  .source-wordmark { min-height: 70px; }
+  .source-bottom { font-size: .875rem; line-height: 1.65; }
+  dialog { width: calc(100% - 24px); max-height: calc(100dvh - 24px); padding: 1.1rem; border-radius: 12px; }
+  .dialog-top { position: sticky; top: -1.1rem; z-index: 2; background: #1e2a30f7; margin: -1.1rem -1.1rem 1rem; padding: .6rem .9rem; border-bottom: 1px solid var(--line); }
+  .dialog-title { font-size: 1.5rem; }
+  .dialog-lead, .detail-block p { font-size: 1rem; }
+  .source-item > a { font-size: 1rem; overflow-wrap: anywhere; }
+  .source-item > p { font-size: .875rem; }
+  footer { gap: .5rem; padding-bottom: calc(1.2rem + env(safe-area-inset-bottom)); }
+  footer > a, footer > button { min-height: 44px; display: flex; align-items: center; font-size: .875rem; }
+  .toast { max-width: calc(100vw - 24px); width: max-content; font-size: .875rem; text-align: center; }
+}
+
+@media (max-width: 359px) {
+  .brand > span:last-child { display: none; }
+  .metric-grid { grid-template-columns: minmax(0, 1fr); }
+  .metric-card { min-height: 0; padding: 1rem; }
+  .card-title { min-height: 36px; }
+  .card-value, [data-card="tc"] .card-value { font-size: 2rem; margin-top: .5rem; }
+  [data-card="tc"] .card-value .value-unit { display: inline; margin-left: .25rem; }
+  .card-subline { min-height: 0; padding-bottom: .5rem; }
+  .card-footer { flex-direction: row; align-items: baseline; justify-content: space-between; }
+  .card-footer > .source-chip { width: auto; }
+  .card-footer > span:last-child { max-width: 155px; text-align: right; }
+  .hero h1 { font-size: 2rem; }
+  .source-strip { grid-template-columns: minmax(0, 1fr); gap: .8rem; }
+  .source-strip > button, .source-strip > button:nth-child(3) { padding: .5rem 0; border-right: 0; min-height: 0; }
+  .source-wordmark { min-height: 0; }
+  .source-wordmark > span { margin-bottom: .5rem; }
+}
